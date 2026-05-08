@@ -1,0 +1,276 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.1rem;
+  background-color: rgb(255, 251, 251);
+}
+
+main {
+  margin: 0, auto;
+  padding: 2em;
+}
+
+main section {
+  padding: 50px;
+  margin-bottom: 24px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+main section h2 ::before ::content {
+  color: burlywood;
+}
+
+#site-header {
+  padding: 60px 20px 40px;
+  border-bottom: 4px greenyellow;
+}
+
+#site-header h1 {
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+nav {
+  text-align: center;
+}
+
+/*nav ul li {
+  display: inline-block;
+  padding: 8px 16px;
+  margin: 0 4px;
+  border-radius: 4px;
+  border: greenyellow;
+}*/
+nav ul li a {
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  color: #fffbfb;
+  text-decoration: none;
+}
+nav ul li {
+  display: inline-block;
+}
+/*
+nav a {
+  color: hsl(0, 0%, 100%);
+  font-weight: bold;
+  font-size: 20px;
+  padding: 20px;
+}
+nav a :hover {
+  color: green;
+  background-color: blue;
+  padding: 20px;
+}
+  */
+nav li :hover {
+  background-color: rgb(6, 255, 6);
+  border: 124px;
+  border-radius: 10%;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  border-top: 2px solid #050505;
+  border-bottom: 2px solid #050505;
+  padding: 2%;
+  text-align: left;
+}
+
+th {
+  background-color: gold;
+}
+
+.titolo {
+  font: 17rem;
+  font-weight: bold;
+  font-style: italic;
+  color: burlywood;
+}
+
+.navig,
+a:link,
+a:visited {
+  color: #3f0000;
+}
+
+.headtext {
+  text-align: center;
+}
+
+.underhead {
+  color: blue;
+}
+
+h1 {
+  color: burlywood;
+  text-shadow: 3px 3px 6px gainsboro;
+}
+h2 {
+  font-size: 1.8rem;
+  text-align: left;
+  line-height: 2.4;
+  color: burlywood;
+}
+
+h3 {
+  font-size: 1.2rem;
+  color: hsl(222, 13%, 15%);
+  text-align: left;
+  line-height: 2.2;
+}
+
+.headtext {
+  background-image: url(header-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-color: #050505;
+}
+
+.list :nth-child(odd) {
+  background-color: whitesmoke;
+}
+
+.list :nth-child(even) {
+  background-color: rgb(178, 176, 176);
+}
+
+.backdoor h3::after {
+  content: "NEW";
+  display: inline-block;
+  padding: 2px 8px;
+  margin-left: 12px;
+  background-color: green;
+  color: #ffffff;
+  border-radius: 3px;
+  font-size: 0.75rem;
+}
+
+.backdoor {
+  background-color: rgb(248, 239, 227);
+}
+
+.bottom {
+  background-color: burlywood;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  width: 30%;
+}
+
+.button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.935);
+}
+
+.chiusura {
+  border-radius: auto;
+  text-align: center;
+  font-size: 1rem;
+  background-color: burlywood;
+  color: #3f0000;
+}
+
+label {
+  color: rgb(104, 12, 12);
+  font-weight: bold;
+}
+
+input,
+textarea,
+select {
+  font-family: Helvetica, Arial, sans-serif;
+  width: 20em;
+  font-size: 1.2rem;
+  background-color: whitesmoke;
+}
+
+#consenso {
+  width: auto;
+}
+
+main section h2::before {
+  content: "* ";
+  color: yellowgreen;
+}
+
+form input::placeholder,
+textarea::placeholder {
+  font-style: italic;
+  color: #999;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  background-color: burlywood;
+}
+
+#contatti {
+  background-color: rgb(255, 251, 251);
+}
+
+#esperienze {
+  background-color: rgb(255, 251, 251);
+}
+
+.colore {
+  background-color: rgb(255, 251, 251);
+}
+
+.avatar {
+  width: 110px;
+  height: 110px;
+  border: 4px solid green;
+  border-radius: 50%;
+  margin: 0 24px 12px 0;
+  float: inline-start;
+}
+
+#chi-sono p:first-of-type::first-letter {
+  font-size: 3rem;
+  font-weight: bold;
+  float: left;
+  margin-right: 6px;
+  color: green;
+}
+
+#competenze {
+  clear: both;
+}
+
+li a {
+  text-decoration: none;
+}
+
+h1 {
+  padding: 24px;
+}
+
+#chi-sono {
+  margin-top: -5em;
+  background-color: beige;
+}
+.progress {
+  color: goldenrod;
+}

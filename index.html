@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primo esercizio</title>
+    
+    <link rel="stylesheet" href="assets.css/style.css">
+   
+</head>
+
+<body>
+    <div>
+        <header class="headtext" id="site-header">
+            <h1 class="titolo">Gabriele Leonardi</h1>
+            <p class="underhead"> <strong>Full stack developer</strong> - Corso Epicode 2026</p>
+                      <nav>
+                <ul class="navig">
+                    <li style="list-style-type: none;"><a href="#chi-sono">👤 Chi sono</a></li>
+                    <li style="list-style-type: none;"><a href="#competenze">Competenze</a></li>
+                    <li style="list-style-type: none;"><a href="#progetti">Progetti</a></li>
+                    <li style="list-style-type: none;"><a href="#esperienze">Esperienze</a></li>
+                    <li style="list-style-type: none;"><a href="#contatti">Contatti</a></li>
+
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <main>
+        <section id="chi-sono">
+            <h2>Chi sono</h2>
+            
+                <p>Benvenuti nella mia portfolio page! Qui potrete conoscere meglio me, le mie competenze e i miei
+                    progetti.
+                </p>
+            
+
+            <figure>
+                <img class="avatar"  src="https://cdn.pixabay.com/photo/2016/09/09/20/43/robot-1658018_1280.jpg"
+                    alt="Immagine di un robot" width="200" height="200">
+                <figcaption>Immagine di un robot da Pixabay</figcaption>
+            </figure>
+  
+            <p>Mi chiamo Gabriele Leonardi e ho deciso di intraprendere una carriera nel mondo del <strong>web</strong>.
+            </p>
+
+            <p> <em>Ho lavorato per diversi anni nella ristorazione ed ho scoperto questo mondo grazie ad un amico
+                    che
+                    mi ha fatto</em>
+                conoscere il corso di Epicode.
+            </p>
+            
+        </section>
+
+        <section id="competenze">
+            <h2>Competenze</h2>
+            <p>la prima settimana del corso cercherò di imparare i concetti base di:</p>
+            <ul class="list">
+                <li><b>HTML</b><progress class="progress"   value="70" max="100"></progress> </li>
+                <li>CSS</li>
+                <li>Git e GitHub</li>
+                <li>JavaScript</li>
+
+            </ul>
+        </section>
+        <section id="esperienze">
+            <h2>Esperienze</h2>
+            <p>Una piccola descrizione delle mie esperienze lavorative.</p>
+            <table>
+                <caption>Una tabella delle mie competenze lavorative pregresse</caption>
+                <thead>
+                    <tr>
+                        <th>Posizione</th>
+                        <th>Azienda</th>
+                        <th>Periodo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Studente Epicode</td>
+                        <td>Epicode</td>
+                        <td>2026</td>
+                    </tr>
+                    <tr>
+                        <td>Bartender</td>
+                        <td>Anantara Roma</td>
+                        <td>2025 2026</td>
+                    </tr>
+                    <tr>
+                        <td>Bartender</td>
+                        <td>A.Roma </td>
+                        <td>2022 2025</td>
+                    </tr>
+                </tbody>
+
+            </table>
+        </section>
+        <section id="progetti"> <div class="colore">
+            <h2>Progetti</h2>
+            <p>Durante il corso realizzerò diversi progetti, tra cui alcuni del pre corso:</p></div>
+            <div class="backdoor">
+                <h3>Registrazione per App Musicale</h3>
+                <p>Realizzazione di una pagina di registrazione per un'app musicale, con form di input per nome, email e
+                    password.</p>
+                <a href="https://github.com/Gabrieleleonardi21/sfida-front-end.git" target="_blank">Vedi su GitHub</a>
+            </div>
+            <h3>Clone della Home di YouTube</h3>
+            <p>Realizzazione di una pagina che replica la home di YouTube, con layout simile e funzionalità di base.</p>
+            <a href="https://github.com/Gabrieleleonardi21/clone-YouTube-.git" target="_blank">Vedi su GitHub</a>
+        </section>
+        <section id="contatti">
+            <h2>Contattami</h2>
+            <p>Per contattarmi puoi compilare i seguenti form:</p>
+            <form action="#" method="post">
+                <label for="nome">Nome:</label> <br />
+                <input type="text" id="nome" name="nome" placeholder="Il tuo nome" required><br />
+                <br /> <label for="email">Email:</label> <br />
+                <input type="email" id="email" name="email" placeholder="La tua email" required><br />
+                <br />
+                <label for="motivo del contatto">Motivo del contatto:</label> <br />
+                <select id="motivo del contatto" name="motivo del contatto" required>
+                    <option value="">Seleziona una opzione</option>
+                    <option value="informazioni">Informazioni</option>
+                    <option value="lavoro">Lavoro</option>
+                    <option value="altro">Altro</option>
+                </select> <br />
+
+
+                <br /> <label for="date">Preferenza di data:</label> <br />
+                <input type="date" id="date" name="date" required> <br />
+                <br /><label for="messaggio">Messaggio:</label><br />
+                <textarea id="messaggio" name="messaggio" placeholder="Il tuo messaggio" required></textarea><br />
+                <br /><input type="checkbox" id="consenso" name="consenso" required>
+                <label for="consenso">Acconsento al trattamento dei dati personali</label><br />
+
+
+                <br /><button class="bottom" type="submit">Invia</button>
+                </div>
+        </section>
+
+        <!-- Costruisci qui la tua Portfolio Page seguendo le istruzioni dell'esercizio -->
+    </main>
+    <footer class="chiusura">
+        <p>&copy; 2026 Gabriele Leonardi. Tutti i diritti riservati.
+            immagine di un robot da <a href="https://pixabay.com/it/illustrations/robot-1658018/"
+                target="_blank">Pixabay</a>
+        </p>
+    </footer>
+    
+</body>
+
+</html>
