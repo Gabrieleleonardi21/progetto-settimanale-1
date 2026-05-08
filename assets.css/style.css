@@ -274,6 +274,7 @@ button:hover {
   font-size: 1.5rem;
   background-color: burlywood;
   color: #3f0000;
+  line-height: 2.4;
 }
 
 label {
@@ -366,10 +367,11 @@ h1 {
 .progress {
   color: goldenrod;
 }
-footer {
-  margin: 48px;
-  color: burlywood;
-}
+
 i {
   padding: 8px;
+}
+
+.link-progetti {
+  text-align: end;
 }
