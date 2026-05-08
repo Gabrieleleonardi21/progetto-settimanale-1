@@ -23,13 +23,7 @@ nav a {
 a:hover {
   color: goldenrod;
 }
-nav ß {
-  padding: 8px 16px;
-  border-radius: 4px;
-  border: 2px solid rgba(255, 255, 255, 0.3);
-  color: #fffbfb;
-  text-decoration: none;
-}
+
 body {
   margin: 0;
   padding: 0px;
