@@ -255,7 +255,7 @@ p {
   background-color: burlywood;
   color: rgb(0, 0, 0);
   font-weight: bold;
-  width: 30%;
+  width: 15%;
 }
 
 .button {
@@ -290,6 +290,7 @@ select {
   font-family: Helvetica, Arial, sans-serif;
   font-size: 1.2rem;
   background-color: rgb(232, 238, 146);
+  width: 100%;
 }
 
 #consenso {
