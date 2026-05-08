@@ -64,3 +64,6 @@ main section h3::before {
   content: "* ";
   color: yellowgreen;
 }
+i {
+  padding: 24px;
+}
