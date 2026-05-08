@@ -32,7 +32,7 @@ main section h2 ::before ::content {
 
 #site-header {
   padding: 60px 20px 40px;
-  border-bottom: 4px greenyellow;
+  border-bottom: 4px solid greenyellow;
 }
 
 #site-header h1 {
@@ -121,7 +121,7 @@ nav {
   border-radius: 3px;
   background-color: #d4a017;
 }
-* nav ul li a {
+nav ul li a {
   padding: 8px 16px;
   border-radius: 4px;
   border: 2px solid rgba(255, 255, 255, 0.3);

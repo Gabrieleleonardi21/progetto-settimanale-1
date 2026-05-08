@@ -3,3 +3,46 @@
 *::after {
   box-sizing: border-box;
 }
+
+header {
+  background-image: url(header-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-color: #050505;
+  text-align: center;
+  border-bottom: 4px solid goldenrod;
+}
+
+nav a {
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  color: #850c0c;
+  text-decoration: none;
+}
+a:hover {
+  color: goldenrod;
+}
+nav ß {
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  color: #fffbfb;
+  text-decoration: none;
+}
+body {
+  margin: 0;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Roboto" sans-serif;
+  font-size: 1.1rem;
+  background-color: rgb(255, 251, 251);
+  text-align: center;
+}
+main section {
+  padding: 50px;
+  margin-bottom: 24px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
