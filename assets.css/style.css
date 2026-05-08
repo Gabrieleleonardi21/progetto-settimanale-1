@@ -366,3 +366,10 @@ h1 {
 .progress {
   color: goldenrod;
 }
+footer {
+  margin: 48px;
+  color: burlywood;
+}
+i {
+  padding: 8px;
+}
