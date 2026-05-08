@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Primo esercizio</title>
-    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="assets.css/style.css">
    
 </head>
@@ -17,11 +17,11 @@
             <p class="underhead"> <strong>Full stack developer</strong> - Corso Epicode 2026</p>
                       <nav>
                 <ul class="navig">
-                    <li style="list-style-type: none;"><a href="#chi-sono">👤 Chi sono</a></li>
-                    <li style="list-style-type: none;"><a href="#competenze">Competenze</a></li>
-                    <li style="list-style-type: none;"><a href="#progetti">Progetti</a></li>
-                    <li style="list-style-type: none;"><a href="#esperienze">Esperienze</a></li>
-                    <li style="list-style-type: none;"><a href="#contatti">Contatti</a></li>
+                    <li style="list-style-type: none;"><a href="#chi-sono"><i class="bi bi-person-fill"></i> Chi sono</a></li>
+                    <li style="list-style-type: none;"><a href="#competenze"><i class="bi bi-speedometer"></i>Competenze</a></li>
+                    <li style="list-style-type: none;"><a href="#progetti"><i class="bi bi-suitcase-lg-fill"></i>Progetti</a></li>
+                    <li style="list-style-type: none;"><a href="#esperienze"><i class="bi bi-archive-fill"></i>Esperienze</a></li>
+                    <li style="list-style-type: none;"><a href="#contatti"><i class="bi bi-envelope-fill"></i>Contatti</a></li>
 
                 </ul>
             </nav>
@@ -103,11 +103,18 @@
                 <h3>Registrazione per App Musicale</h3>
                 <p>Realizzazione di una pagina di registrazione per un'app musicale, con form di input per nome, email e
                     password.</p>
-                <a href="https://github.com/Gabrieleleonardi21/sfida-front-end.git" target="_blank">Vedi su GitHub</a>
+                <a href="https://github.com/Gabrieleleonardi21/sfida-front-end.git" target="_blank"><i class="bi bi-github"></i>Vedi su GitHub</a>
             </div>
+            <div class="clone">
             <h3>Clone della Home di YouTube</h3>
             <p>Realizzazione di una pagina che replica la home di YouTube, con layout simile e funzionalità di base.</p>
-            <a href="https://github.com/Gabrieleleonardi21/clone-YouTube-.git" target="_blank">Vedi su GitHub</a>
+            <a href="https://github.com/Gabrieleleonardi21/clone-YouTube-.git" target="_blank"><i class="bi bi-github"></i>Vedi su GitHub</a>
+            </div>
+            <div class="portfolio">
+                <h3>Portfolio personale</h3>
+                <p>questa pagina costruita da zero in cinque giorn, dal Markup HTML alla stilizzazione CSS, fino alla pubblicazione su GitHub</p>
+                <a href="javascriptvoid()" target="_blank"><i class="bi bi-github"></i>Vedi su GitHub</a>
+            </div>
         </section>
         <section id="contatti">
             <h2>Contattami</h2>
@@ -118,13 +125,14 @@
                 <br /> <label for="email">Email:</label> <br />
                 <input type="email" id="email" name="email" placeholder="La tua email" required><br />
                 <br />
+                <div class="motivo">
                 <label for="motivo del contatto">Motivo del contatto:</label> <br />
                 <select id="motivo del contatto" name="motivo del contatto" required>
                     <option value="">Seleziona una opzione</option>
                     <option value="informazioni">Informazioni</option>
                     <option value="lavoro">Lavoro</option>
                     <option value="altro">Altro</option>
-                </select> <br />
+                </select> <br /></div>
 
 
                 <br /> <label for="date">Preferenza di data:</label> <br />
