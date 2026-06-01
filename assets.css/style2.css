@@ -4,60 +4,248 @@
   box-sizing: border-box;
 }
 
-header {
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.1rem;
+  background-color: rgb(255, 251, 251);
+}
+
+/* ============================================
+   HEADER
+   ============================================ */
+
+#site-header {
   background-image: url(header-bg.jpg);
   background-size: cover;
   background-position: center;
   background-color: #050505;
   text-align: center;
-  border-bottom: 4px solid goldenrod;
+  padding: 24px 12px 16px;
+  border-bottom: 4px solid greenyellow;
+}
+
+#site-header h1 {
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.titolo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  font-style: italic;
+  color: burlywood;
+}
+
+.underhead {
+  color: blue;
+}
+
+nav {
+  text-align: center;
+  margin-top: 16px;
+  padding-bottom: 8px;
 }
 
 nav a {
-  padding: 8px 16px;
+  padding: 6px 10px;
+  font-size: 0.85rem;
   border-radius: 4px;
   border: 2px solid rgba(255, 255, 255, 0.3);
-  color: #850c0c;
+  color: #fffbfb;
   text-decoration: none;
 }
-a:hover {
-  color: goldenrod;
+
+nav a:hover {
+  background-color: rgb(6, 255, 6);
+  border-radius: 10%;
 }
 
-body {
-  margin: 0;
-  padding: 0px;
-  box-sizing: border-box;
-  font-family: "Roboto" sans-serif;
-  font-size: 1.1rem;
-  background-color: rgb(255, 251, 251);
-  text-align: center;
+/* ============================================
+   MAIN
+   ============================================ */
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0.75em 0.75em;
 }
+
+h2 {
+  font-size: 1.8rem;
+  text-align: left;
+  line-height: 2.4;
+  color: burlywood;
+}
+
+h2::before {
+  content: "* ";
+  color: yellowgreen;
+}
+
+.intro {
+  margin-bottom: 1.5rem;
+}
+
 main section {
-  padding: 50px;
-  margin-bottom: 24px;
+  padding: 16px;
+  margin-bottom: 16px;
   border: 1px solid #e0e0e0;
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
 }
-.chiusura {
-  text-align: center;
-  font-size: 1.5rem;
-  background-color: burlywood;
-  color: #3f0000;
-  line-height: 2.4;
-}
 
 h3 {
   font-size: 1.2rem;
-  color: goldenrod;
+  color: hsl(222, 13%, 15%);
   text-align: left;
   line-height: 2.2;
 }
-main section h3::before {
-  content: "* ";
-  color: yellowgreen;
+
+/* ============================================
+   CARD PROGETTI
+   ============================================ */
+
+.backdoor {
+  background-color: rgb(248, 239, 227);
+  border-radius: 1em;
+  border-left: 4px solid goldenrod;
 }
+
+.backdoor h3::after {
+  content: "NEW";
+  display: inline-block;
+  padding: 2px 8px;
+  margin-left: 12px;
+  background-color: green;
+  color: #ffffff;
+  border-radius: 3px;
+  font-size: 0.75rem;
+}
+
+.backdoor a,
+.backdoor h3,
+.backdoor p {
+  padding-left: 24px;
+}
+
+.clone {
+  border-left: 4px solid goldenrod;
+  border-radius: 1em;
+}
+
+.clone a,
+.clone h3,
+.clone p {
+  padding-left: 24px;
+}
+
+.portfolio {
+  background-color: rgb(248, 239, 227);
+  border-radius: 1em;
+  border-left: 4px solid goldenrod;
+}
+
+.portfolio a,
+.portfolio h3,
+.portfolio p {
+  padding-left: 24px;
+}
+
+/* ============================================
+   LINKS
+   ============================================ */
+
+a:link,
+a:visited {
+  color: #3f0000;
+}
+
+a:hover {
+  color: goldenrod;
+}
+
 i {
-  padding: 24px;
+  padding: 8px;
+}
+
+/* ============================================
+   FOOTER
+   ============================================ */
+
+.chiusura {
+  text-align: center;
+  font-size: 0.95rem;
+  background-color: burlywood;
+  color: #3f0000;
+  padding: 28px 16px;
+  line-height: 1.6;
+}
+
+.chiusura p {
+  margin: 6px 0;
+}
+
+.chiusura a {
+  color: #3f0000;
+  text-decoration: none;
+  margin: 0 8px;
+}
+
+.chiusura i {
+  font-size: 1.4rem;
+  vertical-align: middle;
+}
+
+/* ============================================
+   TABLET (≥ 768px)
+   ============================================ */
+@media (min-width: 768px) {
+  main {
+    padding: 1.5em 1.5em;
+  }
+
+  main section {
+    padding: 32px;
+    margin-bottom: 24px;
+  }
+
+  #site-header {
+    padding: 50px 20px 32px;
+  }
+
+  .titolo {
+    font-size: 2.5rem;
+  }
+
+  nav a {
+    padding: 6px 12px;
+    font-size: 0.9rem;
+  }
+}
+
+/* ============================================
+   DESKTOP (≥ 1280px)
+   ============================================ */
+@media (min-width: 1280px) {
+  main {
+    max-width: 1000px;
+    padding: 2em 1.5em;
+  }
+
+  main section {
+    padding: 48px;
+  }
+
+  #site-header {
+    padding: 60px 24px 40px;
+  }
+
+  .titolo {
+    font-size: 3rem;
+  }
+
+  nav a {
+    padding: 8px 16px;
+  }
 }
