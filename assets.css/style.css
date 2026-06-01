@@ -8,30 +8,31 @@ body {
   margin: 0;
   padding: 0px;
   box-sizing: border-box;
-  font-family: "Roboto" sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 1.1rem;
   background-color: rgb(255, 251, 251);
 }
 
+/* ============================================
+   BASE = MOBILE (≤ 767px)
+   ============================================ */
+
 main {
-  margin: 0, auto;
-  padding: 2em;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0.75em 0.75em;
 }
 
 main section {
-  padding: 50px;
-  margin-bottom: 24px;
+  padding: 16px;
+  margin-bottom: 16px;
   border: 1px solid #e0e0e0;
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
 }
 
-main section h2 ::before ::content {
-  color: burlywood;
-}
-
 #site-header {
-  padding: 60px 20px 40px;
+  padding: 24px 12px 16px;
   border-bottom: 4px solid greenyellow;
 }
 
@@ -42,25 +43,26 @@ main section h2 ::before ::content {
 nav {
   text-align: center;
 }
-* .skill-table {
+
+.sk-table {
   width: 100%;
   border-collapse: collapse;
   table-layout: fixed;
 }
 
-.skill-table col.col-tech {
+.sk-table col.col-tech {
   width: 55%;
 }
-.skill-table col.col-level {
+.sk-table col.col-level {
   width: 45%;
 }
 
-.skill-table thead tr {
+.sk-table thead tr {
   border-top: 2px solid #e0dcd4;
   border-bottom: 2px solid #e0dcd4;
 }
 
-.skill-table th {
+.sk-table th {
   padding: 8px 12px;
   text-align: left;
   font-size: 0.82rem;
@@ -69,22 +71,22 @@ nav {
   color: #666;
 }
 
-.skill-table tbody tr {
+.sk-table tbody tr {
   border-bottom: 1px solid #e0dcd4;
 }
 
-.skill-table tbody tr:last-child {
+.sk-table tbody tr:last-child {
   border-bottom: 2px solid #e0dcd4;
 }
 
-.skill-table td {
+.sk-table td {
   padding: 14px 12px;
   vertical-align: middle;
   border-left: none;
   border-right: none;
 }
 
-.skill-dot {
+.sk-dot {
   display: inline-block;
   width: 11px;
   height: 11px;
@@ -93,13 +95,13 @@ nav {
   vertical-align: middle;
 }
 
-.skill-name {
+.sk-name {
   font-weight: bold;
   font-size: 0.95rem;
   vertical-align: middle;
 }
 
-.skill-desc {
+.sk-desc {
   display: block;
   font-size: 0.76rem;
   color: #666;
@@ -121,32 +123,42 @@ nav {
   border-radius: 3px;
   background-color: #d4a017;
 }
+
+.navig {
+  padding: 0;
+  margin: 16px 0 0;
+  text-align: center;
+}
+
+.navig li {
+  display: inline-block;
+  margin: 4px;
+}
+
 nav ul li a {
-  padding: 8px 16px;
+  padding: 6px 10px;
+  font-size: 0.85rem;
   border-radius: 4px;
   border: 2px solid rgba(255, 255, 255, 0.3);
   color: #fffbfb;
   text-decoration: none;
 }
-nav ul li {
-  display: inline-block;
-}
 
-nav li :hover {
+nav li a:hover {
   background-color: rgb(6, 255, 6);
-  border: 124px;
   border-radius: 10%;
 }
 
 table {
   border-collapse: collapse;
   width: 100%;
+  font-size: 0.85rem;
 }
 
 th,
 td {
-  border-top: 2px #ada7a7;
-  border-bottom: 2px #8a8a8a;
+  border-top: 2px solid #ada7a7;
+  border-bottom: 2px solid #8a8a8a;
   padding: 2%;
   text-align: left;
 }
@@ -156,7 +168,7 @@ th {
 }
 
 .titolo {
-  font: 17rem;
+  font-size: 1.8rem;
   font-weight: bold;
   font-style: italic;
   color: burlywood;
@@ -179,7 +191,9 @@ a:visited {
 h1 {
   color: burlywood;
   text-shadow: 3px 3px 6px gainsboro;
+  padding: 24px;
 }
+
 h2 {
   font-size: 1.8rem;
   text-align: left;
@@ -201,11 +215,11 @@ h3 {
   background-color: #050505;
 }
 
-.list :nth-child(odd) {
+.list > :nth-child(odd) {
   background-color: whitesmoke;
 }
 
-.list :nth-child(even) {
+.list > :nth-child(even) {
   background-color: rgb(178, 176, 176);
 }
 
@@ -221,43 +235,47 @@ h3 {
 }
 
 .backdoor {
-  border: 24px;
   background-color: rgb(248, 239, 227);
   border-radius: 1em;
   border-left: 4px solid goldenrod;
 }
 
 .backdoor a,
-h3,
-p {
+.backdoor h3,
+.backdoor p {
   padding-left: 24px;
 }
+
 .clone {
-  border: 24px;
   border-left: 4px solid goldenrod;
   border-radius: 1em;
 }
+
 .clone a,
-h3,
-p {
+.clone h3,
+.clone p {
   padding-left: 24px;
 }
+
 .portfolio {
-  border: 24px;
   background-color: rgb(248, 239, 227);
   border-radius: 1em;
   border-left: 4px solid goldenrod;
 }
+
 .portfolio a {
   padding-left: 24px;
 }
+
 .bottom {
   background-color: burlywood;
   color: rgb(0, 0, 0);
   font-weight: bold;
-  width: 15%;
+  width: 100%;
+  padding: 12px;
 }
 
+button,
 .button {
   padding: 12px 24px;
   border: none;
@@ -265,22 +283,41 @@ p {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-button:hover {
+button:hover,
+.button:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.935);
 }
 
 .chiusura {
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 0.95rem;
   background-color: burlywood;
   color: #3f0000;
-  line-height: 2.4;
+  padding: 28px 16px;
+  line-height: 1.6;
+}
+
+.chiusura p {
+  margin: 6px 0;
+  padding-left: 0;
+}
+
+.chiusura a {
+  color: #3f0000;
+  text-decoration: none;
+  margin: 0 8px;
+}
+
+.chiusura i {
+  font-size: 1.4rem;
+  vertical-align: middle;
 }
 
 label {
   color: burlywood;
   font-weight: bold;
 }
+
 .motivo {
   width: 100%;
 }
@@ -313,6 +350,7 @@ input {
   background-color: rgb(232, 238, 146);
   width: 100%;
 }
+
 input:focus,
 textarea:focus,
 select:focus {
@@ -325,6 +363,7 @@ select:focus {
 
 #esperienze {
   background-color: rgb(255, 251, 251);
+  overflow-x: auto;
 }
 
 .colore {
@@ -356,14 +395,10 @@ li a {
   text-decoration: none;
 }
 
-h1 {
-  padding: 24px;
-}
-
 #chi-sono {
-  margin-top: -5em;
   background-color: beige;
 }
+
 .progress {
   color: goldenrod;
 }
@@ -374,4 +409,74 @@ i {
 
 .link-progetti {
   text-align: end;
+}
+
+/* ============================================
+   TABLET (≥ 768px)
+   ============================================ */
+@media (min-width: 768px) {
+  main {
+    padding: 1.5em 1.5em;
+  }
+
+  main section {
+    padding: 32px;
+    margin-bottom: 24px;
+  }
+
+  nav ul li {
+    display: inline-block;
+  }
+
+  nav ul li a {
+    padding: 6px 12px;
+    font-size: 0.9rem;
+  }
+
+  #site-header {
+    padding: 50px 20px 32px;
+  }
+
+  .titolo {
+    font-size: 2.5rem;
+  }
+
+  table {
+    font-size: 1rem;
+  }
+
+  #esperienze {
+    overflow-x: visible;
+  }
+
+  .bottom {
+    width: auto;
+    padding: 12px 28px;
+  }
+}
+
+/* ============================================
+   DESKTOP (≥ 1280px)
+   ============================================ */
+@media (min-width: 1280px) {
+  main {
+    max-width: 1000px;
+    padding: 2em 1.5em;
+  }
+
+  main section {
+    padding: 48px;
+  }
+
+  nav ul li a {
+    padding: 8px 16px;
+  }
+
+  #site-header {
+    padding: 60px 24px 40px;
+  }
+
+  .titolo {
+    font-size: 3rem;
+  }
 }
