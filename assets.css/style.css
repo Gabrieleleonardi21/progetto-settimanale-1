@@ -384,6 +384,7 @@ select:focus {
   font-weight: bold;
   float: left;
   margin-right: 6px;
+  line-height: 0.8;
   color: green;
 }
 
