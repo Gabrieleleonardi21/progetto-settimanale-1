@@ -357,7 +357,7 @@ select {
 }
 
 main section h2::before {
-  content: "* ";
+  content: "✺ ";
   color: yellowgreen;
 }
 
