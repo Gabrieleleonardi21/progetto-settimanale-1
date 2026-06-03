@@ -29,7 +29,7 @@
             </nav>
         </header>
     <main>
-        <a href="#" class="back-to-top" aria-label="Torna in cima">🔝</a>
+        <a href="#" class="back-to-top" aria-label="Torna in cima"><i class="bi bi-arrow-up"></i></a>
         <section id="chi-sono">
             <h2>Chi sono</h2>
             
@@ -176,6 +176,11 @@
         <section id="contatti">
             <h2>Contattami</h2>
             <button id="apri-contatti">Scrivimi</button>
+            <div id="dati-salvati" hidden>
+                <h3>Messaggio inviato</h3>
+                <div id="dati-contenuto"></div>
+                <button id="chiudi-dati">Chiudi</button>
+            </div>
         </section>
 
         <!-- Costruisci qui la tua Portfolio Page seguendo le istruzioni dell'esercizio -->
@@ -213,6 +218,16 @@
             <div id="successo" hidden>
                 <p>Messaggio inviato con successo! Ti risponderò al più presto.</p>
             </div>
+        </div>
+    </div>
+
+    <div id="overlay-conferma" class="overlay" hidden>
+        <div class="modal">
+            <h3>Conferma i dati inseriti</h3>
+            <div id="riepilogo"></div>
+            <br />
+            <button id="conferma-invio" class="bottom">Conferma</button>
+            <button id="annulla-invio">Annulla</button>
         </div>
     </div>
     <footer class="chiusura">

@@ -388,6 +388,29 @@ select:focus {
   font-weight: bold;
 }
 
+#dati-salvati {
+  margin-top: 16px;
+  padding: 20px;
+  background-color: rgb(220, 255, 220);
+  border: 2px solid green;
+  border-radius: 8px;
+}
+
+#dati-salvati h3 {
+  color: green;
+  margin-top: 0;
+}
+
+#dati-contenuto p {
+  margin: 6px 0;
+}
+
+#riepilogo p {
+  margin: 6px 0;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 4px;
+}
+
 input:user-invalid,
 textarea:user-invalid,
 select:user-invalid {
