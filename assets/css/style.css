@@ -10,7 +10,7 @@ html {
 
 body {
   margin: 0;
-  padding: 0px;
+  padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
   font-size: 1.1rem;
@@ -50,6 +50,7 @@ main section {
 nav {
   text-align: center;
 }
+
 .back-to-top {
   position: fixed;
   bottom: 20px;
@@ -63,6 +64,7 @@ nav {
   text-align: center;
   line-height: 48px;
 }
+
 .sk-table {
   width: 100%;
   border-collapse: collapse;
@@ -154,7 +156,8 @@ nav {
   margin: 4px;
 }
 
-nav ul li a {
+nav ul li a,
+nav a {
   padding: 6px 10px;
   font-size: 0.85rem;
   border-radius: 4px;
@@ -163,7 +166,8 @@ nav ul li a {
   text-decoration: none;
 }
 
-nav li a:hover {
+nav li a:hover,
+nav a:hover {
   background-color: rgb(6, 255, 6);
   border-radius: 10%;
 }
@@ -199,6 +203,10 @@ a:visited {
   color: #3f0000;
 }
 
+a:hover {
+  color: goldenrod;
+}
+
 .headtext {
   text-align: center;
 }
@@ -228,10 +236,14 @@ h3 {
 }
 
 .headtext {
-  background-image: url(header-bg.jpg);
+  background-image: url(../img/header-bg.jpg);
   background-size: cover;
   background-position: center;
   background-color: #050505;
+}
+
+.intro {
+  margin-bottom: 1.5rem;
 }
 
 .list > :nth-child(odd) {
@@ -288,7 +300,9 @@ h3 {
   border-left: 4px solid goldenrod;
 }
 
-.portfolio a {
+.portfolio a,
+.portfolio h3,
+.portfolio p {
   padding-left: 24px;
 }
 
@@ -490,6 +504,7 @@ i {
 .link-progetti {
   text-align: end;
 }
+
 .overlay {
   position: fixed;
   top: 0;
@@ -499,6 +514,7 @@ i {
   background: rgba(0, 0, 0, 0.5);
   z-index: 1000;
 }
+
 .modal {
   position: absolute;
   top: 50%;
@@ -508,12 +524,15 @@ i {
   padding: 50px;
   border-radius: 10px;
 }
+
 .overlay[hidden] {
   display: none;
 }
+
 button {
   background-color: burlywood;
 }
+
 /* ============================================
    TABLET (≥ 768px)
    ============================================ */
@@ -535,7 +554,8 @@ button {
     display: inline-block;
   }
 
-  nav ul li a {
+  nav ul li a,
+  nav a {
     padding: 6px 12px;
     font-size: 0.9rem;
   }
@@ -579,7 +599,8 @@ button {
     padding: 48px;
   }
 
-  nav ul li a {
+  nav ul li a,
+  nav a {
     padding: 8px 16px;
   }
 
