@@ -52,7 +52,7 @@ main section {
   bottom: 20px;
   right: 20px;
   border-radius: 50%;
-  background-color: burlywood;
+  background-color: goldenrod;
   color: gainsboro;
   z-index: 50;
   width: 48px;
@@ -500,7 +500,6 @@ select:user-invalid + .errore {
   line-height: 0.8;
   color: green;
 }
-
 
 li a {
   text-decoration: none;
