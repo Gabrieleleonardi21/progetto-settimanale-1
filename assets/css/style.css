@@ -468,10 +468,6 @@ i {
     margin-bottom: 24px;
   }
 
-  nav ul li {
-    display: inline-block;
-  }
-
   nav ul li a,
   nav a {
     padding: 6px 12px;
