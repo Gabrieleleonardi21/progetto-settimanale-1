@@ -14,8 +14,7 @@
 </head>
 
 <body>
-    <div>
-        <header class="headtext" id="site-header">
+    <header class="headtext" id="site-header">
             <h1 class="titolo">Gabriele Leonardi</h1>
             <p class="underhead"> <strong>Full stack developer</strong> - Corso Epicode 2026</p>
                       <nav>
@@ -29,8 +28,8 @@
                 </ul>
             </nav>
         </header>
-    </div>
     <main>
+        <a href="#" class="back-to-top" aria-label="Torna in cima"><i class="bi bi-arrow-up"></i></a>
         <section id="chi-sono">
             <h2>Chi sono</h2>
             
@@ -168,7 +167,7 @@
             <div class="portfolio">
                 <h3>Portfolio personale</h3>
                 <p>questa pagina costruita da zero in cinque giorn, dal Markup HTML alla stilizzazione CSS, fino alla pubblicazione su GitHub</p>
-                <a href="javascriptvoid()" target="_blank"><i class="bi bi-github"></i>Vedi su GitHub</a>
+                <a href="https://github.com/Gabrieleleonardi21/progetto-settimanale-1.git" target="_blank"><i class="bi bi-github"></i>Vedi su GitHub</a>
             </div>
             <div class="link-progetti"> 
                 <a href="Progetti.html" target="_blank"> <i class="bi bi-arrow-right"></i>Vedi altri progetti </a>
@@ -176,37 +175,61 @@
         </section>
         <section id="contatti">
             <h2>Contattami</h2>
-            <p>Per contattarmi puoi compilare i seguenti form:</p>
-            <form action="#" method="post">
-                <label for="nome">Nome:</label> <br />
-                <input type="text" id="nome" name="nome" placeholder="Il tuo nome" required><br />
-                <br /> <label for="email">Email:</label> <br />
-                <input type="email" id="email" name="email" placeholder="La tua email" required><br />
-                <br />
-                <div class="motivo">
-                <label for="motivo del contatto">Motivo del contatto:</label> <br />
-                <select id="motivo del contatto" name="motivo del contatto" required>
-                    <option value="">Seleziona una opzione</option>
-                    <option value="informazioni">Informazioni</option>
-                    <option value="lavoro">Lavoro</option>
-                    <option value="altro">Altro</option>
-                </select> <br /></div>
-
-
-                <br /> <label for="date">Preferenza di data:</label> <br />
-                <input type="date" id="date" name="date" required> <br />
-                <br /><label for="messaggio">Messaggio:</label><br />
-                <textarea id="messaggio" name="messaggio" placeholder="Il tuo messaggio" required></textarea><br />
-                <br /><input type="checkbox" id="consenso" name="consenso" required>
-                <label for="consenso">Acconsento al trattamento dei dati personali</label><br />
-
-
-                <br /><button class="bottom" type="submit"><i class="bi bi-send-fill"></i>Invia</button>
-                </div>
+            <button id="apri-contatti">Scrivimi</button>
+            <div id="dati-salvati" hidden>
+                <h3>Messaggio inviato</h3>
+                <div id="dati-contenuto"></div>
+                <button id="chiudi-dati">Chiudi</button>
+            </div>
         </section>
 
         <!-- Costruisci qui la tua Portfolio Page seguendo le istruzioni dell'esercizio -->
     </main>
+    <div id="overlay-contatti" class="overlay" hidden>
+        <div class="modal">
+            <button class="close" id="chiudi-contatti">𝙓</button>
+            <p>Per contattarmi puoi compilare i seguenti form:</p>
+            <form action="#" method="post">
+                <label for="nome">Nome:</label> <br />
+                <input type="text" id="nome" name="nome" placeholder="Il tuo nome" required>
+                <span class="errore">Il nome è obbligatorio.</span><br />
+                <br /> <label for="email">Email:</label> <br />
+                <input type="email" id="email" name="email" placeholder="La tua email" required>
+                <span class="errore">Inserisci un'email valida.</span><br />
+                <br />
+                <label for="motivo-contatto">Motivo del contatto:</label> <br />
+                <select id="motivo-contatto" name="motivo-contatto" required>
+                    <option value="">Seleziona una opzione</option>
+                    <option value="informazioni">Informazioni</option>
+                    <option value="lavoro">Lavoro</option>
+                    <option value="altro">Altro</option>
+                </select>
+                <span class="errore">Seleziona un motivo.</span><br />
+                <br /> <label for="date">Preferenza di data:</label> <br />
+                <input type="date" id="date" name="date" required>
+                <span class="errore">La data è obbligatoria.</span><br />
+                <br /><label for="messaggio">Messaggio:</label><br />
+                <textarea id="messaggio" name="messaggio" placeholder="Il tuo messaggio" required></textarea>
+                <span class="errore">Il messaggio è obbligatorio.</span><br />
+                <br /><input type="checkbox" id="consenso" name="consenso" required>
+                <label for="consenso">Acconsento al trattamento dei dati personali</label><br />
+                <br /><button class="bottom" type="submit"><i class="bi bi-send-fill"></i>Invia</button>
+            </form>
+            <div id="successo" hidden>
+                <p>Messaggio inviato con successo! Ti risponderò al più presto.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="overlay-conferma" class="overlay" hidden>
+        <div class="modal">
+            <h3>Conferma i dati inseriti</h3>
+            <div id="riepilogo"></div>
+            <br />
+            <button id="conferma-invio" class="bottom">Conferma</button>
+            <button id="annulla-invio">Annulla</button>
+        </div>
+    </div>
     <footer class="chiusura">
         <p><a href="javascriptvoid(0)" target="_blank"><i class="bi bi-github"></a></i><a href="javascriptvoid(0)" target="_blank"><i class="bi bi-linkedin"></i></a><a href="javascriptvoid(0)" target="_blank"><a href="javascriptvoid(0)" target="_blank"><i class="bi bi-globe2"></i></a><a href="javascriptvoid(0)" target="_blank"></a><a href="javascriptvoid(0)" target="_blank"><i class="bi bi-camera-video-fill"></i></a></p>
         <p>&copy; 2026 Gabriele Leonardi. Tutti i diritti riservati.
@@ -214,7 +237,7 @@
                 target="_blank">Pixabay</a>
         </p>
     </footer>
-    
+    <script src="assets.css/js/script.js"></script>
 </body>
 
 </html>

@@ -1,3 +1,7 @@
+html {
+  scroll-padding-top: 200px;
+}
+
 *,
 *::before,
 *::after {
@@ -34,6 +38,9 @@ main section {
 #site-header {
   padding: 24px 12px 16px;
   border-bottom: 4px solid greenyellow;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 #site-header h1 {
@@ -43,7 +50,19 @@ main section {
 nav {
   text-align: center;
 }
-
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 50%;
+  background-color: burlywood;
+  color: gainsboro;
+  z-index: 50;
+  width: 48px;
+  height: 48px;
+  text-align: center;
+  line-height: 48px;
+}
 .sk-table {
   width: 100%;
   border-collapse: collapse;
@@ -223,15 +242,21 @@ h3 {
   background-color: rgb(178, 176, 176);
 }
 
+.backdoor h3 {
+  position: relative;
+}
+
 .backdoor h3::after {
   content: "NEW";
-  display: inline-block;
   padding: 2px 8px;
-  margin-left: 12px;
   background-color: green;
   color: #ffffff;
   border-radius: 3px;
   font-size: 0.75rem;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .backdoor {
@@ -336,7 +361,7 @@ select {
 }
 
 main section h2::before {
-  content: "* ";
+  content: "✺ ";
   color: yellowgreen;
 }
 
@@ -355,6 +380,60 @@ input:focus,
 textarea:focus,
 select:focus {
   background-color: burlywood;
+}
+
+#successo {
+  text-align: center;
+  padding: 24px;
+  background-color: rgb(220, 255, 220);
+  border: 2px solid green;
+  border-radius: 8px;
+  color: green;
+  font-weight: bold;
+}
+
+#dati-salvati {
+  margin-top: 16px;
+  padding: 20px;
+  background-color: rgb(220, 255, 220);
+  border: 2px solid green;
+  border-radius: 8px;
+}
+
+#dati-salvati h3 {
+  color: green;
+  margin-top: 0;
+}
+
+#dati-contenuto p {
+  margin: 6px 0;
+}
+
+#riepilogo p {
+  margin: 6px 0;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 4px;
+}
+
+input:user-invalid,
+textarea:user-invalid,
+select:user-invalid {
+  border: 2px solid red;
+  background-color: rgb(255, 220, 220);
+  outline: none;
+}
+
+input:user-invalid + .errore,
+textarea:user-invalid + .errore,
+select:user-invalid + .errore {
+  display: block;
+  color: red;
+  font-size: 0.8rem;
+  margin-top: 2px;
+}
+
+.errore {
+  display: none;
 }
 
 #contatti {
@@ -411,11 +490,38 @@ i {
 .link-progetti {
   text-align: end;
 }
-
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: whitesmoke;
+  padding: 50px;
+  border-radius: 10px;
+}
+.overlay[hidden] {
+  display: none;
+}
+button {
+  background-color: burlywood;
+}
 /* ============================================
    TABLET (≥ 768px)
    ============================================ */
 @media (min-width: 768px) {
+  html {
+    scroll-padding-top: 280px;
+  }
+
   main {
     padding: 1.5em 1.5em;
   }
@@ -460,6 +566,10 @@ i {
    DESKTOP (≥ 1280px)
    ============================================ */
 @media (min-width: 1280px) {
+  html {
+    scroll-padding-top: 320px;
+  }
+
   main {
     max-width: 1000px;
     padding: 2em 1.5em;
