@@ -91,6 +91,7 @@ document
     chiudiModal();
   });
 
+
 document.getElementById("annulla-invio").addEventListener("click", function () {
   overlayConferma.setAttribute("hidden", "");
 });
